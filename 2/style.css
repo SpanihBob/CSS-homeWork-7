@@ -1,0 +1,38 @@
+*, *::after, *::before{box-sizing: border-box;}
+body{margin: 2%;
+    background-color: rgb(206, 206, 207);}
+.container{ display: inline-flex;
+            flex-direction: column;}
+.name{  font-size: 110%;
+        font-weight: 600;}
+.hours{font-size: 90%;
+        color: rgb(122, 122, 122);}
+.ania > .mail{  padding: 10px; 
+                border-radius: 10px 10px 10px 0;
+                background-color: lightpink;}
+.jack > .mail{  padding: 10px; 
+                border-radius: 10px 10px 0 10px;
+                background-color: rgb(135, 130, 177); }
+.ania{  display: inherit;
+        padding: 1%;}
+.jack{  display: inherit;
+        padding: 1%;
+        flex-direction: row-reverse;}
+.mail{width: 80%;}
+.name_img{width: 10%;
+        display: inline-flex;
+padding-left: 5px;
+padding-right: 5px;}
+.pusto{content: '';
+        width: 10%;}
+@media(max-width: 1300px){.mail{width: 70%;}
+                        .pusto{width: 15%;}
+                        .name_img{width: 15%;}}
+@media(max-width: 750px){.mail{width: 50%;}
+                        .pusto{width: 25%;}
+                        .name_img{width: 25%;}}
+@media(max-width: 500px){.mail{width: 40%;}
+                        .pusto{width: 30%;}
+                        .name_img{width: 30%;
+                        display: block;}
+                        }

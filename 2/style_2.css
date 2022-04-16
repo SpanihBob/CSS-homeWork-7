@@ -1,0 +1,38 @@
+*, *::after, *::before{box-sizing: border-box;}
+body{margin: 5%;
+    background-color: rgb(206, 206, 207);}
+.container{ display:grid;}
+.name{  font-size: 110%;
+        font-weight: 600;}
+.hours{font-size: 90%;
+        color: rgb(122, 122, 122);}
+.ania > .mail{  padding: 10px; 
+                border-radius: 10px 10px 10px 0;
+                background-color: lightpink;}
+.jack > .mail{  padding: 10px; 
+                border-radius: 10px 10px 0 10px;
+                background-color: rgb(135, 130, 177); }
+.ania{  display: grid;
+        grid-template-columns: 160px 75% 160px;
+        padding: 1%;}
+
+.jack{  display: grid;
+        grid-template-columns: 160px 75% 160px;
+        padding: 1%;}
+
+.name_img{display: inline-flex;
+          padding-left: 5px;
+          padding-right: 5px;}
+
+@media(max-width: 1400px){.ania{grid-template-columns: 160px 65% 160px;}
+                          .jack{grid-template-columns: 160px 65% 160px;}}
+
+@media(max-width: 950px){.ania{grid-template-columns: 160px 50% 160px;}
+                         .jack{grid-template-columns: 160px 50% 160px;}}
+
+@media(max-width: 700px){.ania{grid-template-columns: 160px 30% 160px;}
+                         .jack{grid-template-columns: 160px 30% 160px;}}
+                        
+@media(max-width: 500px){.ania{grid-template-columns: 100px 30% 100px;}
+                         .jack{grid-template-columns: 100px 30% 100px;}
+                        .jack > .name_img{flex-direction: column-reverse;}}

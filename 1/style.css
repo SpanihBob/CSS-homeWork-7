@@ -1,0 +1,26 @@
+*, *::before, *::after  {box-sizing: border-box;}/* чтобы браузер учитывал рамки (border) и внутренние отступы (padding) в размере ширины (width) элемента. */
+
+body{background-color: rgb(157, 188, 245);
+    padding: 2%;
+    display: inline-flex;
+}
+
+.column{display: inline-flex;
+        width: 32%;        
+        flex-direction: column;
+    }
+
+.content{width: 100%;
+        background-color: aliceblue;}
+
+.block{display: inherit;
+        flex-direction: column;
+        margin: 2%;
+        align-self: flex-start;}
+
+img{width: 100%;}
+.text{padding: 2%;}
+
+       
+
+

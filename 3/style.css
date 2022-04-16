@@ -1,0 +1,61 @@
+*, *::after, *::before{box-sizing: border-box;}
+
+body{background-color: aquamarine;
+    position: relative;}
+
+header{ z-index: 20;
+    position: fixed;    /* фиксируем хэдэр */
+    top: 0; 
+    left: 0;   
+    font-weight: 600;
+    font-size: 140%;
+    color: aliceblue;
+    padding: 1%;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(98, 190, 160);}
+
+.content{top: 60px;
+position: absolute;
+min-height: 100vh;}/* растягиваем на весь экран */
+
+.conteiner{display: inline-flex;}
+
+.desk{overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(187, 185, 184);
+      margin: 1%;
+      padding: 1%;
+      border-radius: 10px;
+      max-width: 400px;
+      min-width: 300px;
+      max-height: 100vh;
+    min-height: 90vh;}
+    
+.name{color: blanchedalmond;
+    font-size: 170%;}
+
+.mail{background-color: rgb(228, 226, 226);
+      margin: 1%;
+      padding: 1%;
+      border-radius: 10px;}
+
+.img{display: grid;
+     grid-template-columns: 2.6fr 1.5fr 0.5fr;}
+
+.icons{display: inline-flex;
+        align-items:flex-end;}
+
+.ava{display: flex;
+     flex-direction: row-reverse;}
+
+.i{padding: 1%;
+   font-size: 130%;    
+   margin: 1px;}
+
+.text{padding: 2%;}
+
+.imgi{width: 20px;}
+
+.imga{width: 50px;}
